@@ -355,3 +355,32 @@ aws ecr delete-repository --repository-name demo-frontend --region us-west-2 --f
 - **External Access**: LoadBalancer exposes app to internet
 
 This demo shows EKS managing 4 pods (2 frontend + 2 backend) with automatic load balancing, service discovery, and scaling capabilities!
+
+# 6. Get AWS account ID and set variable
+export AWS_ACCOUNT_ID=$(aws sts get-caller-identity --query Account --output text)
+echo "AWS Account ID: $AWS_ACCOUNT_ID"
+
+# 7. Create ECR repositories
+aws ecr create-repository --repository-name demo-backend --region us-west-2
+aws ecr create-repository --repository-name demo-frontend --region us-west-2
+
+# 8. Login to ECR
+aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com
+
+# 9. Build, tag and push backend
+echo "Building backend..."
+docker build -t demo-backend -f backend/Dockerfile .
+docker tag demo-backend:latest $AWS_ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/demo-backend:latest
+echo "Pushing backend..."
+docker push $AWS_ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/demo-backend:latest
+
+# 10. Build, tag and push frontend
+echo "Building frontend..."
+docker build -t demo-frontend -f frontend/Dockerfile .
+docker tag demo-frontend:latest $AWS_ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/demo-frontend:latest
+echo "Pushing frontend..."
+docker push $AWS_ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/demo-frontend:latest
+
+echo "✅ Docker images built and pushed successfully!"
+echo "Backend: $AWS_ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/demo-backend:latest"
+echo "Frontend: $AWS_ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/demo-frontend:latest"

@@ -5,248 +5,176 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mxfile host="app.diagrams.net" modified="2025-01-01T00:00:00.000Z" agent="draw.io" etag="xxx" version="24.0.0" type="device">
   <diagram name="EKS-Demo-Architecture" id="eks-demo">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="800" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         
         <!-- Background -->
         <mxCell id="bg" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#F8F9FA;strokeColor=none;" vertex="1" parent="1">
-          <mxGeometry x="0" y="0" width="1400" height="900" as="geometry" />
+          <mxGeometry x="0" y="0" width="1200" height="800" as="geometry" />
         </mxCell>
         
         <!-- Title -->
-        <mxCell id="title" value="EKS Demo Application Architecture" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=28;fontStyle=1;fontColor=#1A202C;" vertex="1" parent="1">
-          <mxGeometry x="450" y="40" width="500" height="40" as="geometry" />
+        <mxCell id="title" value="EKS Demo Application" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#1A202C;" vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="300" height="40" as="geometry" />
         </mxCell>
         
-        <!-- Internet -->
-        <mxCell id="internet-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="620" y="120" width="160" height="80" as="geometry" />
+        <!-- Users -->
+        <mxCell id="users" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#1976D2;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.users;" vertex="1" parent="1">
+          <mxGeometry x="570" y="120" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="internet" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#1976D2;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.internet;" vertex="1" parent="1">
-          <mxGeometry x="670" y="135" width="60" height="37" as="geometry" />
-        </mxCell>
-        <mxCell id="internet-label" value="Internet Users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1976D2;" vertex="1" parent="1">
-          <mxGeometry x="650" y="175" width="100" height="20" as="geometry" />
+        <mxCell id="users-label" value="Users" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1976D2;" vertex="1" parent="1">
+          <mxGeometry x="570" y="185" width="60" height="20" as="geometry" />
         </mxCell>
         
-        <!-- AWS Cloud Container -->
-        <mxCell id="aws-cloud-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF8E1;strokeColor=#FF8F00;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="100" y="240" width="1200" height="600" as="geometry" />
-        </mxCell>
-        <mxCell id="aws-icon" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF8F00;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.aws_cloud;" vertex="1" parent="1">
-          <mxGeometry x="120" y="260" width="50" height="31" as="geometry" />
-        </mxCell>
-        <mxCell id="aws-label" value="AWS Cloud" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#FF8F00;" vertex="1" parent="1">
-          <mxGeometry x="180" y="270" width="100" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Application Load Balancer -->
-        <mxCell id="alb-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="600" y="300" width="200" height="100" as="geometry" />
-        </mxCell>
+        <!-- Load Balancer -->
         <mxCell id="alb" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7B1FA2;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.application_load_balancer;" vertex="1" parent="1">
-          <mxGeometry x="670" y="320" width="60" height="60" as="geometry" />
+          <mxGeometry x="570" y="270" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="alb-label" value="Application Load Balancer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#7B1FA2;" vertex="1" parent="1">
-          <mxGeometry x="620" y="375" width="160" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- VPC Container -->
-        <mxCell id="vpc-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#2E7D32;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="150" y="450" width="1100" height="350" as="geometry" />
-        </mxCell>
-        <mxCell id="vpc-icon" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#2E7D32;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.vpc;" vertex="1" parent="1">
-          <mxGeometry x="170" y="470" width="50" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="vpc-label" value="VPC (Virtual Private Cloud)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#2E7D32;" vertex="1" parent="1">
-          <mxGeometry x="230" y="485" width="200" height="20" as="geometry" />
+        <mxCell id="alb-label" value="Load Balancer" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#7B1FA2;" vertex="1" parent="1">
+          <mxGeometry x="545" y="335" width="110" height="20" as="geometry" />
         </mxCell>
         
         <!-- EKS Cluster Container -->
-        <mxCell id="eks-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#F57C00;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="200" y="530" width="1000" height="240" as="geometry" />
+        <mxCell id="eks-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#F57C00;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="200" y="420" width="800" height="300" as="geometry" />
         </mxCell>
         <mxCell id="eks-icon" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#F57C00;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.eks_cloud;" vertex="1" parent="1">
-          <mxGeometry x="220" y="550" width="60" height="36" as="geometry" />
+          <mxGeometry x="220" y="440" width="60" height="36" as="geometry" />
         </mxCell>
-        <mxCell id="eks-label" value="Amazon EKS Cluster (demo-cluster)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#F57C00;" vertex="1" parent="1">
-          <mxGeometry x="290" y="558" width="250" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Node Group 1 -->
-        <mxCell id="node1-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="250" y="600" width="400" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="node1-icon" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#1976D2;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_instance;" vertex="1" parent="1">
-          <mxGeometry x="270" y="620" width="48" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="node1-label" value="Worker Node 1 (t3.medium)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1976D2;" vertex="1" parent="1">
-          <mxGeometry x="330" y="635" width="180" height="20" as="geometry" />
+        <mxCell id="eks-label" value="Amazon EKS Cluster" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#F57C00;" vertex="1" parent="1">
+          <mxGeometry x="290" y="448" width="200" height="20" as="geometry" />
         </mxCell>
         
-        <!-- Pods in Node 1 -->
-        <mxCell id="frontend-pod1-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="350" y="680" width="80" height="40" as="geometry" />
+        <!-- Frontend Pods -->
+        <mxCell id="frontend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="280" y="520" width="280" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="frontend-label" value="Frontend Pods (2x)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#4CAF50;" vertex="1" parent="1">
+          <mxGeometry x="360" y="530" width="120" height="20" as="geometry" />
+        </mxCell>
+        
         <mxCell id="frontend-pod1" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4CAF50;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=8;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;" vertex="1" parent="1">
-          <mxGeometry x="360" y="690" width="20" height="20" as="geometry" />
+          <mxGeometry x="340" y="560" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="frontend-pod1-label" value="Frontend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#4CAF50;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="385" y="690" width="40" height="20" as="geometry" />
-        </mxCell>
-        
-        <mxCell id="backend-pod1-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#FF9800;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="680" width="80" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="backend-pod1" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9800;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=8;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;" vertex="1" parent="1">
-          <mxGeometry x="460" y="690" width="20" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="backend-pod1-label" value="Backend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#FF9800;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="485" y="690" width="40" height="20" as="geometry" />
+        <mxCell id="frontend-pod1-label" value="React UI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#4CAF50;" vertex="1" parent="1">
+          <mxGeometry x="320" y="590" width="70" height="10" as="geometry" />
         </mxCell>
         
-        <!-- Node Group 2 -->
-        <mxCell id="node2-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E3F2FD;strokeColor=#1976D2;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="750" y="600" width="400" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="node2-icon" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#1976D2;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ec2_instance;" vertex="1" parent="1">
-          <mxGeometry x="770" y="620" width="48" height="48" as="geometry" />
-        </mxCell>
-        <mxCell id="node2-label" value="Worker Node 2 (t3.medium)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1976D2;" vertex="1" parent="1">
-          <mxGeometry x="830" y="635" width="180" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Pods in Node 2 -->
-        <mxCell id="frontend-pod2-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F5E8;strokeColor=#4CAF50;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="850" y="680" width="80" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="frontend-pod2" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4CAF50;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=8;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;" vertex="1" parent="1">
-          <mxGeometry x="860" y="690" width="20" height="20" as="geometry" />
+          <mxGeometry x="450" y="560" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="frontend-pod2-label" value="Frontend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#4CAF50;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="885" y="690" width="40" height="20" as="geometry" />
+        <mxCell id="frontend-pod2-label" value="React UI" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#4CAF50;" vertex="1" parent="1">
+          <mxGeometry x="430" y="590" width="70" height="10" as="geometry" />
         </mxCell>
         
-        <mxCell id="backend-pod2-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#FF9800;strokeWidth=1;" vertex="1" parent="1">
-          <mxGeometry x="950" y="680" width="80" height="40" as="geometry" />
+        <!-- Backend Pods -->
+        <mxCell id="backend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#FF9800;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="640" y="520" width="280" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="backend-label" value="Backend Pods (2x)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#FF9800;" vertex="1" parent="1">
+          <mxGeometry x="720" y="530" width="120" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="backend-pod1" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9800;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=8;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="560" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="backend-pod1-label" value="Node.js API" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#FF9800;" vertex="1" parent="1">
+          <mxGeometry x="675" y="590" width="80" height="10" as="geometry" />
+        </mxCell>
+        
         <mxCell id="backend-pod2" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9800;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=8;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;" vertex="1" parent="1">
-          <mxGeometry x="960" y="690" width="20" height="20" as="geometry" />
+          <mxGeometry x="810" y="560" width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="backend-pod2-label" value="Backend" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#FF9800;fontStyle=1;" vertex="1" parent="1">
-          <mxGeometry x="985" y="690" width="40" height="20" as="geometry" />
+        <mxCell id="backend-pod2-label" value="Node.js API" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#FF9800;" vertex="1" parent="1">
+          <mxGeometry x="785" y="590" width="80" height="10" as="geometry" />
         </mxCell>
         
-        <!-- ECR Registry -->
-        <mxCell id="ecr-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E0;strokeColor=#F57C00;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="300" width="80" height="100" as="geometry" />
-        </mxCell>
+        <!-- Container Registry -->
         <mxCell id="ecr" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#F57C00;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.ecr;" vertex="1" parent="1">
-          <mxGeometry x="1320" y="320" width="40" height="40" as="geometry" />
+          <mxGeometry x="1080" y="520" width="60" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ecr-label" value="ECR" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#F57C00;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="370" width="60" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Services -->
-        <mxCell id="services-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F3E5F5;strokeColor=#7B1FA2;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="480" y="480" width="240" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="services-label" value="Kubernetes Services" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#7B1FA2;" vertex="1" parent="1">
-          <mxGeometry x="550" y="505" width="140" height="20" as="geometry" />
+        <mxCell id="ecr-label" value="Container&#xa;Registry" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#F57C00;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="585" width="100" height="30" as="geometry" />
         </mxCell>
         
         <!-- Traffic Flow Arrows -->
-        <!-- Internet to ALB -->
-        <mxCell id="arrow1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=3;strokeColor=#1976D2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="internet-bg" target="alb-bg">
+        <!-- Users to ALB -->
+        <mxCell id="arrow1" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=4;strokeColor=#1976D2;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="700" y="220" as="sourcePoint" />
-            <mxPoint x="700" y="280" as="targetPoint" />
+            <mxPoint x="600" y="210" as="sourcePoint" />
+            <mxPoint x="600" y="270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="arrow1-label" value="HTTPS Traffic" style="text;html=1;strokeColor=none;fillColor=white;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontStyle=1;fontColor=#1976D2;" vertex="1" parent="1">
-          <mxGeometry x="720" y="250" width="80" height="20" as="geometry" />
+        <mxCell id="arrow1-label" value="HTTP/HTTPS" style="text;html=1;strokeColor=none;fillColor=white;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#1976D2;" vertex="1" parent="1">
+          <mxGeometry x="620" y="230" width="90" height="20" as="geometry" />
         </mxCell>
         
-        <!-- ALB to Services -->
-        <mxCell id="arrow2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=3;strokeColor=#7B1FA2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="alb-bg" target="services-bg">
+        <!-- ALB to Frontend -->
+        <mxCell id="arrow2" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=4;strokeColor=#4CAF50;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="700" y="420" as="sourcePoint" />
-            <mxPoint x="600" y="460" as="targetPoint" />
+            <mxPoint x="580" y="360" as="sourcePoint" />
+            <mxPoint x="450" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="arrow2-label" value="Load Balance" style="text;html=1;strokeColor=none;fillColor=white;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontStyle=1;fontColor=#7B1FA2;" vertex="1" parent="1">
-          <mxGeometry x="630" y="430" width="80" height="20" as="geometry" />
-        </mxCell>
-        
-        <!-- Services to Pods -->
-        <mxCell id="arrow3" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4CAF50;exitX=0.2;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="services-bg">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="520" y="560" as="sourcePoint" />
-            <mxPoint x="390" y="680" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        
-        <mxCell id="arrow4" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#4CAF50;exitX=0.8;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="services-bg">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="672" y="560" as="sourcePoint" />
-            <mxPoint x="890" y="680" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="arrow2-label" value="Load Balance" style="text;html=1;strokeColor=none;fillColor=white;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fontColor=#4CAF50;" vertex="1" parent="1">
+          <mxGeometry x="480" y="430" width="90" height="20" as="geometry" />
         </mxCell>
         
         <!-- Frontend to Backend -->
-        <mxCell id="arrow5" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#FF9800;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="frontend-pod1-bg" target="backend-pod1-bg">
+        <mxCell id="arrow3" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=3;strokeColor=#FF9800;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="430" y="700" as="sourcePoint" />
-            <mxPoint x="450" y="700" as="targetPoint" />
+            <mxPoint x="560" y="560" as="sourcePoint" />
+            <mxPoint x="640" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        
-        <mxCell id="arrow6" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#FF9800;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="frontend-pod2-bg" target="backend-pod2-bg">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="930" y="700" as="sourcePoint" />
-            <mxPoint x="950" y="700" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="arrow3-label" value="API Calls" style="text;html=1;strokeColor=none;fillColor=white;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontStyle=1;fontColor=#FF9800;" vertex="1" parent="1">
+          <mxGeometry x="570" y="535" width="70" height="20" as="geometry" />
         </mxCell>
         
         <!-- ECR to Cluster -->
-        <mxCell id="arrow7" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#F57C00;dashed=1;dashPattern=5 5;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ecr-bg" target="eks-bg">
+        <mxCell id="arrow4" value="" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;strokeColor=#F57C00;dashed=1;dashPattern=8 8;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1280" y="350" as="sourcePoint" />
-            <mxPoint x="1220" y="650" as="targetPoint" />
+            <mxPoint x="1080" y="550" as="sourcePoint" />
+            <mxPoint x="1000" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="arrow7-label" value="Container Images" style="text;html=1;strokeColor=none;fillColor=white;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontStyle=1;fontColor=#F57C00;" vertex="1" parent="1">
-          <mxGeometry x="1220" y="470" width="100" height="20" as="geometry" />
+        <mxCell id="arrow4-label" value="Pull Images" style="text;html=1;strokeColor=none;fillColor=white;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=11;fontStyle=1;fontColor=#F57C00;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="530" width="70" height="20" as="geometry" />
         </mxCell>
         
-        <!-- Legend -->
-        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BDBDBD;strokeWidth=2;shadow=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="90" width="350" height="120" as="geometry" />
+        <!-- Simple Stats -->
+        <mxCell id="stats-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BDBDBD;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="280" y="650" width="640" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="legend-title" value="Architecture Components" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#1A202C;" vertex="1" parent="1">
-          <mxGeometry x="275" y="105" width="180" height="20" as="geometry" />
+        <mxCell id="stats-title" value="Demo Capabilities" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#1A202C;" vertex="1" parent="1">
+          <mxGeometry x="580" y="660" width="120" height="20" as="geometry" />
         </mxCell>
-        
-        <!-- Legend Items -->
-        <mxCell id="legend-frontend-icon" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4CAF50;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=8;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="135" width="16" height="16" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-frontend-text" value="Frontend Pods (React UI)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#4CAF50;" vertex="1" parent="1">
-          <mxGeometry x="195" y="130" width="130" height="25" as="geometry" />
+        <mxCell id="stats-text" value="4 Pods • Load Balancing • Auto-Scaling • Service Discovery • Container Orchestration" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="300" y="685" width="600" height="20" as="geometry" />
         </mxCell>
         
-        <mxCell id="legend-backend-icon" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9800;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=8;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="160" width="16" height="16" as="geometry" />
+        <!-- Simple Legend -->
+        <mxCell id="legend-bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#BDBDBD;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="500" width="120" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="legend-backend-text" value="Backend Pods (Node.js API)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontColor=#FF9800;" vertex="1" parent="1">
-          <mxGeometry x="195" y="155" width="130" height="25" as="geometry" />
+        <mxCell id="legend-title" value="Components" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;fontStyle=1;fontColor=#1A202C;" vertex="1" parent="1">
+          <mxGeometry x="85" y="510" width="80" height="15" as="geometry" />
         </mxCell>
         
-        <mxCell id="legend-flow-text" value="Traffic Flow: Users → ALB → Services → Pods" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;fontStyle=1;fontColor=#1A202C;" vertex="1" parent="1">
-          <mxGeometry x="170" y="185" width="310" height="20" as="geometry" />
+        <mxCell id="legend-frontend" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#4CAF50;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=8;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="535" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-frontend-text" value="Frontend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#4CAF50;" vertex="1" parent="1">
+          <mxGeometry x="85" y="530" width="60" height="25" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend-backend" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#FF9800;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=8;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.container_1;" vertex="1" parent="1">
+          <mxGeometry x="65" y="560" width="15" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-backend-text" value="Backend" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#FF9800;" vertex="1" parent="1">
+          <mxGeometry x="85" y="555" width="60" height="25" as="geometry" />
         </mxCell>
         
       </root>

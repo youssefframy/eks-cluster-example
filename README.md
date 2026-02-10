@@ -1,4 +1,4 @@
-# Simple EKS Demo - Complete Setup Guide 2
+# Simple EKS Demo - Complete Setup Guide
 
 ## Architecture Diagram
 ```md
